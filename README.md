@@ -6,7 +6,7 @@ Masterclass interactiva de 3 horas del **Diplomado BIM·Lean·BI·IA (AECODE Tra
 
 ## La clase
 
-61 diapositivas en 8 módulos — marco **Stanford CIFE** aterrizado al Perú con el **Hospital de Megantoni** (Camisea, Cusco) como caso vivo:
+71 diapositivas en 9 módulos — marco **Stanford CIFE** aterrizado al Perú con el **Hospital de Megantoni** (Camisea, Cusco) como caso vivo:
 
 | Módulo | Contenido | Franja |
 |---|---|---|
@@ -18,14 +18,16 @@ Masterclass interactiva de 3 horas del **Diplomado BIM·Lean·BI·IA (AECODE Tra
 | 04 · Caso Megantoni | Plan VDC real + **auditoría de BEP en vivo** (5 errores reales) | 1:46–2:17 |
 | 05 · VDC en el Perú | Plan BIM Perú (hito ago-2026), ISO 19650 NTP, Ulima×Stanford, casos GEN+ | 2:17–2:39 |
 | 06 · VDC + IA | Evidencia por capas: clash ML, reality capture, scheduling generativo | 2:39–2:49 |
-| Cierre | Entregable (Plan VDC propio), flip-cards de repaso, fuentes con confianza | 2:49–3:00 |
+| 07 · Mapeo de procesos | Taller exprés: símbolos, 3 niveles de zoom, 7 criterios, 3 ejemplos (RFI, valorización, ciclo BIM→ICE) y **2 prompts IA copiables** (mapa + infografía), alineado a GEN+ AI Process | 2:49–3:09 |
+| Cierre | Entregable (Plan VDC propio), flip-cards de repaso, fuentes con confianza | 3:09–3:20 |
 
 ## Interacción
 
 - **⚡ 7 flashes**: quiz, dato, frase y debate — se resetean al salir del slide.
 - **🔍 Auditoría de BEP en vivo**: 6 tarjetas clicables (5 errores reales del BEP v01).
 - **🃏 Flip-cards** de repaso con volteo 3D.
-- **🎤 Modo presentador** (tecla `N`): guion completo + cronómetro de 3 h + franja por slide.
+- **🤖 2 prompts IA con botón copiar**: mapa de procesos conversacional (salida Mermaid) e infografía en 2 pasos.
+- **🎤 Modo presentador** (tecla `N`): guion completo + cronómetro de 3 h 20 + franja por slide.
 - **▦ Índice** (tecla `G`) con búsqueda y salto por módulos (select en la barra).
 - Deep-linking por hash (`#/vdc/25`), tema oscuro/claro AECODE, swipe táctil.
 

@@ -292,6 +292,80 @@ export function Sources({ groups }: {
   )
 }
 
+/* ---- Mapa de procesos simple (tareas + decisión sí/no) ------------------- */
+export interface PmNode { t: string; type?: 'start' | 'task' | 'dec' | 'end'; no?: string }
+export function ProcessMap({ nodes, caption }: { nodes: PmNode[]; caption?: string }) {
+  return (
+    <div className="vd-pm up" style={st(1)}>
+      <div className="vd-pmrow">
+        {nodes.map((n, i) => (
+          <div className="vd-pmcell" key={i} style={st(i + 1)}>
+            <div className={`vd-pmnode ${n.type ?? 'task'}`}>
+              <span>{n.t}</span>
+              {n.type === 'dec' && <b className="pm-yes" aria-hidden="true">sí →</b>}
+            </div>
+            {n.type === 'dec' && n.no && (
+              <div className="vd-pmno"><b>no ↩</b> {n.no}</div>
+            )}
+            {i < nodes.length - 1 && <span className="vd-pmarrow" aria-hidden="true">→</span>}
+          </div>
+        ))}
+      </div>
+      {caption && <p className="vd-pmcap">{caption}</p>}
+    </div>
+  )
+}
+
+/* ---- Carriles (swimlanes): un responsable por fila ----------------------- */
+export function Lanes({ lanes, caption }: {
+  lanes: Array<{ role: string; ac: 'v' | 'b' | 'g'; steps: Array<{ t: string; dec?: boolean; hot?: boolean }> }>
+  caption?: string
+}) {
+  return (
+    <div className="vd-lanes up" style={st(1)}>
+      {lanes.map((l, li) => (
+        <div className={`vd-lane ac-${l.ac}`} key={l.role} style={st(li + 1)}>
+          <div className="vd-lrole">{l.role}</div>
+          <div className="vd-lsteps">
+            {l.steps.map((s, i) => (
+              <div key={i} className={`vd-lstepitem${s.dec ? ' dec' : ''}${s.hot ? ' hot' : ''}`}>
+                {s.t}
+                {s.hot && <em>cuello de botella</em>}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+      {caption && <p className="vd-pmcap">{caption}</p>}
+    </div>
+  )
+}
+
+/* ---- Prompt copiable (para ChatGPT / Claude) ------------------------------ */
+export function PromptCard({ title, tag, prompt }: { title: string; tag: string; prompt: string }) {
+  const active = useContext(SlideActiveContext)
+  const [copied, setCopied] = useState(false)
+  useEffect(() => { if (!active) setCopied(false) }, [active])
+  const copy = () => {
+    navigator.clipboard?.writeText(prompt).then(() => {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2400)
+    }).catch(() => {})
+  }
+  return (
+    <div className="vd-prompt up" style={st(1)}>
+      <div className="vd-phead">
+        <span className="vd-ptag">{tag}</span>
+        <b>{title}</b>
+        <button className="vd-pcopy" onClick={copy} aria-label="Copiar prompt al portapapeles">
+          {copied ? '✓ Copiado' : '⧉ Copiar'}
+        </button>
+      </div>
+      <pre className="vd-pbody">{prompt}</pre>
+    </div>
+  )
+}
+
 /* ---- Los 3 pilares + métricas (triángulo VDC) ---------------------------- */
 export function Pillars() {
   const data: Array<{ ac: string; icon: string; t: string; d: string; tool: string }> = [

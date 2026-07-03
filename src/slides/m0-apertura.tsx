@@ -74,10 +74,11 @@ function Mapa() {
     ['04', 'Caso Megantoni', 'Un plan VDC real de hospital, auditado en vivo.'],
     ['05', 'VDC en el Perú', 'Normativa, ecosistema y casos GEN+ en infraestructura.'],
     ['06', 'VDC + IA', 'Hacia dónde va esto — evidencia, no marketing.'],
+    ['07', 'Mapear procesos', 'Taller exprés: dibuja cualquier proceso en simple, con IA.'],
   ]
   return (
     <>
-      <Head eyebrow="El mapa de la clase" title="Seis módulos, un caso vivo y preguntas clave"
+      <Head eyebrow="El mapa de la clase" title="Siete módulos, un caso vivo y preguntas clave"
         lead="Cada módulo cierra con un flash: pregunta, dato o debate. Respondan rápido y sin miedo — el error en clase es gratis; en obra, no." />
       <div className="nx-grid nx-g3 up" style={st(1)}>
         {mods.map((m, i) => (
@@ -92,6 +93,7 @@ function Mapa() {
         <span className="nx-chip"><i>⚡</i> 7 flashes interactivos</span>
         <span className="nx-chip"><i>🔍</i> 1 auditoría de BEP en vivo</span>
         <span className="nx-chip"><i>🃏</i> repaso con flip-cards</span>
+        <span className="nx-chip"><i>🤖</i> 2 prompts IA copiables</span>
         <span className="nx-chip"><i>📋</i> entregable: tu Plan VDC</span>
       </div>
     </>
@@ -125,7 +127,7 @@ export const m0: Entry[] = [
   },
   {
     id: 'mapa', num: '2', title: 'El mapa de la clase', node: <Mapa />,
-    note: 'Explica las reglas del juego: seis módulos, un flash interactivo por módulo (quiz, dato o debate), una auditoría de BEP en vivo en el módulo 4, y el entregable final: el plan VDC de su propio proyecto. Hay pausa de 10 minutos después del módulo 3. Anima a responder los flashes en voz alta.',
+    note: 'Explica las reglas del juego: siete módulos, flashes interactivos (quiz, dato o debate), una auditoría de BEP en vivo en el módulo 4, un taller exprés de mapeo de procesos con prompts IA en el módulo 7, y el entregable final: el plan VDC de su propio proyecto. Hay pausa de 10 minutos después del módulo 3. Anima a responder los flashes en voz alta.',
   },
   {
     id: 'flash-apertura', num: '⚡', title: 'Debate · ¿Por qué fallan los proyectos?', node: <FlashSlide item={FLASH.apertura} />,

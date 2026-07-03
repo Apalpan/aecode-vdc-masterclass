@@ -1,8 +1,8 @@
 /* =========================================================================
    VDC · VIRTUAL DESIGN AND CONSTRUCTION — Masterclass AECODE (3 h)
-   Ensambla los 8 módulos en un DeckDef con secciones (block-jump),
+   Ensambla los 9 módulos en un DeckDef con secciones (block-jump),
    guion de presentador (teleprompter) y cronograma calculado:
-   170 min de contenido + 10 min de pausa (tras el módulo 03) = 180 min.
+   190 min de contenido + 10 min de pausa (tras el módulo 03) = 200 min.
    ========================================================================= */
 import type { DeckDef, SlideDef } from '../deck/Deck'
 import type { Entry } from './types'
@@ -13,6 +13,7 @@ import { m3 } from './m3-pilares'
 import { m4 } from './m4-megantoni'
 import { m5 } from './m5-peru'
 import { m6 } from './m6-futuro'
+import { m6b } from './m6b-procesos'
 import { m7 } from './m7-cierre'
 
 interface Mod { section: string; entries: Entry[]; durations: number[]; breakBefore?: number }
@@ -25,6 +26,7 @@ const MODULES: Mod[] = [
   { section: '04 · Caso Megantoni', entries: m4, durations: [1, 3, 5, 3, 3, 3, 8, 3, 2], breakBefore: 10 },
   { section: '05 · VDC en el Perú', entries: m5, durations: [1, 4, 3, 3, 3, 3, 3, 2] },
   { section: '06 · VDC + IA', entries: m6, durations: [1, 3, 2, 2, 1, 1] },
+  { section: '07 · Mapeo de procesos', entries: m6b, durations: [1, 2, 2, 2, 2, 2, 2, 2, 3, 2] },
   { section: 'Cierre', entries: m7, durations: [1, 3, 4, 2, 1] },
 ]
 
@@ -55,5 +57,5 @@ export const vdcMasterclass: DeckDef = {
   slides,
   notes,
   times,
-  targetSeconds: 3 * 60 * 60,
+  targetSeconds: 200 * 60,
 }

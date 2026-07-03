@@ -86,7 +86,7 @@ export const m6: Entry[] = [
     node: <SectionSlide eyebrow="Módulo 06" title={<>Hacia dónde va VDC:<br />la capa de IA</>}
       lead="Evidencia por capas, con nivel de confianza explícito — porque en 2026 el criterio vale más que el hype."
       chips={['Clash + ML', 'Reality capture', 'Scheduling generativo', 'Con fuentes']} />,
-    note: 'Último módulo de contenido. Encuadre: no vamos a vender humo — separamos lo peer-reviewed, lo que el capital está apostando y lo que es visión de analistas. Ese criterio de clasificación es en sí mismo una lección del diplomado.',
+    note: 'Encuadre: no vamos a vender humo — separamos lo peer-reviewed, lo que el capital está apostando y lo que es visión de analistas. Ese criterio de clasificación es en sí mismo una lección del diplomado.',
   },
   {
     id: 'tres-capas', num: '37', title: 'Tres capas, tres velocidades', node: <TresCapas />,
@@ -106,6 +106,6 @@ export const m6: Entry[] = [
   },
   {
     id: 'flash-cierre', num: '⚡', title: 'Síntesis · La IA alimenta al VDC', node: <FlashSlide item={FLASH.cierre} />,
-    note: 'Frase síntesis final del módulo: la IA no reemplaza al VDC — lo alimenta. Sin objetivos, modelos y métricas no hay nada que optimizar. Puente al cierre de la clase.',
+    note: 'Frase síntesis final del módulo: la IA no reemplaza al VDC — lo alimenta. Sin objetivos, modelos y métricas no hay nada que optimizar. Puente al taller final: y para que la IA alimente tus procesos, primero hay que MAPEARLOS — módulo 7.',
   },
 ]

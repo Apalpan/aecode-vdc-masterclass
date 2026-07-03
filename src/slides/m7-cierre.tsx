@@ -75,6 +75,7 @@ function Fuentes() {
             { t: 'Plan VDC + BEP Hospital de Megantoni (PBEP-001, v01 2024 / v04 2025)', conf: 'alta' },
             { t: 'Formato Agenda ICE y Acta de Acuerdos · 15 Métricas del Coordinador BIM', conf: 'alta' },
             { t: 'PEB Túnel Ollachea · BEP Puente Santa Rosa · Puente Sisa · GORE Cusco', conf: 'alta' },
+            { t: 'Plantilla de captura de procesos (GEN+ Knowledge OS) · app GEN+ AI Process', conf: 'alta' },
             { t: 'Claims virales tipo «$1 en BIM = $20» — sin fuente primaria: NO citar', conf: 'baja' },
           ],
         },
