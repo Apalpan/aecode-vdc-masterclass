@@ -1,0 +1,117 @@
+/* =========================================================================
+   AECODE · VDC Masterclass — Design tokens (OKLCH)
+   Identidad oficial AECODE: navy profundo #0E1121 + violeta/índigo como
+   marca, verde para acción positiva y azul de apoyo. Fuente Manrope.
+   Dark-first (la clase se dicta en oscuro); light como tema alterno.
+   ========================================================================= */
+
+:root {
+  color-scheme: dark;
+
+  /* Tipografía */
+  --font-display: 'Manrope Variable', 'Manrope', system-ui, sans-serif;
+  --font-text: 'Inter Variable', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+
+  /* Escala de tamaño fluida (clamp) */
+  --step--1: clamp(0.78rem, 0.74rem + 0.18vw, 0.88rem);
+  --step-0:  clamp(0.95rem, 0.90rem + 0.22vw, 1.05rem);
+  --step-1:  clamp(1.15rem, 1.05rem + 0.45vw, 1.4rem);
+  --step-2:  clamp(1.45rem, 1.25rem + 0.9vw, 2rem);
+  --step-3:  clamp(1.8rem, 1.45rem + 1.6vw, 2.7rem);
+  --step-4:  clamp(2.3rem, 1.8rem + 2.6vw, 3.8rem);
+  --step-5:  clamp(2.6rem, 1.9rem + 3.6vw, 4.8rem);
+
+  /* Espacio / radios */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --maxw-content: 760px;
+  --maxw-wide: 1280px;
+
+  /* Motion (Emil) */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 140ms;
+  --dur-2: 220ms;
+  --dur-3: 320ms;
+
+  /* -------- Paleta de DATOS: tri-acento AECODE + grises fríos ----------
+     Violeta = marca, azul = estructura, verde = éxito/acción; el resto es
+     una rampa neutra fría para variedad sin salir de la identidad. */
+  --d-green:  #17B14E;   /* verde AECODE (éxito) */
+  --d-teal:   #2FD06E;   /* verde vivo dark */
+  --d-blue:   #4465EE;   /* azul AECODE */
+  --d-indigo: #4A3AC1;   /* violeta AECODE (marca) */
+  --d-purple: #A6A7FF;   /* lavanda (focus/IA) */
+  --d-orange: #E2A33C;   /* ámbar (advertencia suave) */
+  --d-amber:  #C9D0F5;   /* lavanda muy claro */
+  --d-pink:   #8C97DC;   /* azul-lavanda muted */
+  --d-red:    #E5484D;   /* rojo dolor */
+}
+
+/* ------------------------------- DARK (default) ------------------------ */
+:root, [data-theme='dark'] {
+  color-scheme: dark;
+  --bg:        oklch(0.175 0.036 281);   /* ≈ #0E1121 navy AECODE */
+  --bg-deep:   oklch(0.145 0.033 281);   /* ≈ #0D0F1F */
+  --surface:   oklch(0.215 0.045 280);   /* ≈ #13172F */
+  --surface-2: oklch(0.255 0.052 281);   /* ≈ #1B1E3C */
+  --panel:     color-mix(in oklch, var(--surface) 72%, transparent);
+  --border:    color-mix(in oklch, oklch(0.66 0.10 283) 26%, transparent);  /* ≈ #7C7EDF66 */
+  --border-strong: color-mix(in oklch, oklch(0.66 0.10 283) 40%, transparent);
+
+  --ink:       oklch(0.96 0.008 260);    /* ≈ #EEF3F8 */
+  --ink-soft:  oklch(0.87 0.030 280);    /* ≈ #C9D0F5 */
+  --muted:     oklch(0.76 0.030 262);    /* ≈ #A2B4CB */
+  --faint:     oklch(0.66 0.055 278);    /* ≈ #8C97DC */
+
+  --blue:      oklch(0.70 0.130 268);    /* azul apoyo ≈ #7E97FF */
+  --blue-deep: oklch(0.58 0.170 270);
+  --accent:    oklch(0.75 0.115 283);    /* lavanda AECODE ≈ #A6A7FF */
+  --accent-bright: oklch(0.82 0.13 288);
+  --accent-ink: oklch(0.17 0.05 283);
+
+  --ok:        oklch(0.76 0.185 150);    /* verde AECODE dark ≈ #2FD06E */
+  --warn:      oklch(0.76 0.13 80);
+  --grid:      color-mix(in oklch, white 8%, transparent);
+
+  --hud-line:  oklch(0.75 0.115 283 / 0.34);
+  --hud-grid:  oklch(0.70 0.10 281 / 0.06);
+  --glow-a: oklch(0.55 0.19 288 / 0.20);
+  --glow-b: oklch(0.55 0.17 268 / 0.15);
+  --shadow: 0 18px 50px -28px oklch(0 0 0 / 0.7);
+}
+
+/* -------------------------------- LIGHT -------------------------------- */
+[data-theme='light'] {
+  color-scheme: light;
+  --bg:        oklch(0.972 0.003 280);   /* ≈ #F5F5F6 */
+  --bg-deep:   oklch(0.945 0.014 285);   /* ≈ #EDEBF9 */
+  --surface:   oklch(1 0 0);             /* blanco */
+  --surface-2: oklch(0.965 0.010 283);   /* ≈ #F8F9FC */
+  --panel:     color-mix(in oklch, white 82%, transparent);
+  --border:    oklch(0.83 0.055 286);    /* ≈ #C7C2EC */
+  --border-strong: oklch(0.74 0.085 285);
+
+  --ink:       oklch(0.26 0.030 278);    /* ≈ #202231 */
+  --ink-soft:  oklch(0.36 0.055 280);    /* ≈ #3A4065 */
+  --muted:     oklch(0.44 0.060 280);
+  --faint:     oklch(0.56 0.085 282);    /* ≈ #6D61CD suavizado */
+
+  --blue:      oklch(0.55 0.190 266);    /* azul AECODE ≈ #4465EE */
+  --blue-deep: oklch(0.47 0.190 268);
+  --accent:    oklch(0.45 0.185 283);    /* violeta AECODE ≈ #4A3AC1 */
+  --accent-bright: oklch(0.60 0.20 288);
+  --accent-ink: oklch(0.99 0.01 283);
+
+  --ok:        oklch(0.66 0.170 150);    /* verde AECODE ≈ #17B14E */
+  --warn:      oklch(0.62 0.13 78);
+  --grid:      color-mix(in oklch, black 7%, transparent);
+
+  --hud-line:  oklch(0.45 0.185 283 / 0.28);
+  --hud-grid:  oklch(0.45 0.15 283 / 0.05);
+  --glow-a: oklch(0.62 0.16 288 / 0.13);
+  --glow-b: oklch(0.62 0.15 266 / 0.10);
+  --shadow: 0 22px 54px -32px oklch(0.32 0.08 283 / 0.30);
+}

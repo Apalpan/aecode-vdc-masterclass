@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/aecode-vdc-masterclass/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <title>VDC · Virtual Design and Construction — Masterclass AECODE</title>
+    <meta name="description" content="Masterclass de VDC del Diplomado BIM·Lean·BI·IA de AECODE: el marco Stanford CIFE (ICE · BIM · PPM · métricas) aterrizado a la infraestructura peruana con el caso Megantoni. Con fuentes, dinámicas y preguntas clave." />
+    <meta name="author" content="Alejandro Palpan · GEN+ / AECODE" />
+    <meta property="og:title" content="VDC · Virtual Design and Construction — Masterclass AECODE" />
+    <meta property="og:description" content="El marco Stanford CIFE aterrizado a Perú: ICE, BIM, PPM, métricas y el caso Megantoni. Diplomado BIM·Lean·BI·IA." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0E1121" />
+    <script>
+      // Flash-free theme: aplica el tema guardado antes del primer paint. Oscuro AECODE por defecto.
+      (function () {
+        try {
+          var t = localStorage.getItem('aecode-vdc-theme');
+          if (t !== 'dark' && t !== 'light') t = 'dark';
+          document.documentElement.dataset.theme = t;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+        document.documentElement.dataset.deck = 'vdc';
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
