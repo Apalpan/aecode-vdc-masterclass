@@ -23,7 +23,8 @@ export default function AnimatedValue({ text, duration = 1100 }: { text: string;
   const m = /^(\D*?)(\d[\d.,]*)(.*)$/s.exec(text)
   const rawNum = m?.[2] ?? ''
   const decimalComma = /,\d{1,2}$/.test(rawNum)
-  const normalized = decimalComma ? rawNum.replace(/\./g, '').replace(',', '.') : rawNum.replace(/,/g, '')
+  // Sin coma decimal, punto y coma son separadores de miles (es-PE): se eliminan ambos.
+  const normalized = decimalComma ? rawNum.replace(/\./g, '').replace(',', '.') : rawNum.replace(/[.,]/g, '')
   const target = parseFloat(normalized)
 
   const [val, setVal] = useState(reduce ? target : 0)

@@ -117,27 +117,22 @@ function Industria() {
 export const m0: Entry[] = [
   {
     id: 'portada', num: '', title: 'VDC · Virtual Design and Construction', node: <Cover />,
-    time: '0:00–0:03',
     note: 'Bienvenida. Presenta el título completo: Virtual Design and Construction — no “diseño virtual” a secas. Anticipa la promesa: al final de la clase cada uno sabrá estructurar un plan VDC con objetivos y métricas reales, y habremos auditado un BEP real de hospital. Menciona que TODO lo citado hoy tiene fuente.',
   },
   {
     id: 'instructor', num: '1', title: 'Quién enseña', node: <Instructor />,
-    time: '0:03–0:06',
     note: 'Credenciales en 60 segundos, sin ego: certificación y mentoría VDC en Stanford, PM en GEN+ con túneles, puentes y hospitales. El mensaje clave: esta clase mezcla el canon académico con documentos reales de proyectos que gestiono. Pregunta rápida a la sala: ¿quiénes ya trabajan con BIM? ¿quiénes han estado en una sesión ICE?',
   },
   {
     id: 'mapa', num: '2', title: 'El mapa de la clase', node: <Mapa />,
-    time: '0:06–0:09',
     note: 'Explica las reglas del juego: seis módulos, un flash interactivo por módulo (quiz, dato o debate), una auditoría de BEP en vivo en el módulo 4, y el entregable final: el plan VDC de su propio proyecto. Hay pausa de 10 minutos después del módulo 3. Anima a responder los flashes en voz alta.',
   },
   {
     id: 'flash-apertura', num: '⚡', title: 'Debate · ¿Por qué fallan los proyectos?', node: <FlashSlide item={FLASH.apertura} />,
-    time: '0:09–0:12',
     note: 'Debate de apertura, 3 minutos. Recoge 3-4 hipótesis de la sala y anótalas (pizarra o chat): típicamente saldrán “falta de planificación”, “el expediente”, “los cambios”. No corrijas todavía — di que al final de la clase revisitamos estas hipótesis con el framework completo. El dato ancla: hasta +80% de sobrecosto en proyectos grandes.',
   },
   {
     id: 'industria', num: '3', title: 'La industria en números', node: <Industria />,
-    time: '0:12–0:15',
     note: 'Cuatro cifras, todas con fuente primaria: productividad 1% anual (McKinsey 2017), +80% de sobrecosto (McKinsey 2016), 48% del retrabajo por comunicación y datos (PlanGrid/FMI 2018), y la oportunidad de 1,6 billones. Remata: el problema no es de esfuerzo sino de información y decisiones — la frase que estructura toda la clase.',
   },
 ]

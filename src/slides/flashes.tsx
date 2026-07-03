@@ -76,13 +76,13 @@ export const FLASH: Record<string, FlashItem> = {
       { id: 'c', t: 'Julio de 2030' },
     ],
     answer: 'b',
-    explain: 'Agosto 2026 — o sea, el próximo mes. El hito 2030 es la extensión a gobiernos locales y la meta de inversión pública gestionada digitalmente. Quien domine BIM/VDC hoy no está aprendiendo una habilidad optativa: está llegando justo a tiempo al mandato.',
+    explain: 'Agosto 2026 — o sea, el próximo mes — según lo comunicado por el MEF (el hito original del PNCP era dic-2025). El hito 2030 es la extensión a gobiernos locales y la meta de inversión pública gestionada digitalmente. Quien domine BIM/VDC hoy no está aprendiendo una habilidad optativa: está llegando justo a tiempo al mandato.',
     src: 'Plan BIM Perú · D.S. 289-2019-EF, D.S. 108-2021-EF, hoja de ruta MEF',
   },
   cierre: {
     kind: 'frase', tag: 'Síntesis final',
     t: <>«La IA no reemplaza al VDC: <b>lo alimenta.</b> Sin objetivos, modelos y métricas, no hay nada que optimizar.»</>,
-    d: 'Primero el sistema de gestión (VDC), después la amplificación (IA). El caso IGLC 2025 lo demuestra: −24% en el casco estructural y −25,000 horas-hombre con VDC clásico, sin un solo modelo de IA. La ola de IA multiplica al que ya mide.',
+    d: 'Primero el sistema de gestión (VDC), después la amplificación (IA). El caso IGLC 2025 lo demuestra: −24% en el casco estructural y −25.000 horas-hombre con VDC clásico, sin un solo modelo de IA. La ola de IA multiplica al que ya mide.',
   },
   decidir: {
     kind: 'frase', tag: 'Síntesis del módulo',

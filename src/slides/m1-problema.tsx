@@ -77,27 +77,22 @@ export const m1: Entry[] = [
     node: <SectionSlide eyebrow="Módulo 01" title={<>El problema<br />que VDC resuelve</>}
       lead="Diagnóstico con evidencia: dónde y por qué la gestión tradicional pierde plata, plazo y confianza."
       chips={['Retrabajo', 'Latencia de decisiones', 'Información dispersa']} />,
-    time: '0:15–0:16',
     note: 'Transición: ya vimos los números macro; ahora bajemos al proyecto. Este módulo justifica todo lo que viene — si el diagnóstico no duele, la metodología no se adopta.',
   },
   {
     id: 'expediente', num: '4', title: 'El expediente que se rompe en obra', node: <ExpedienteRoto />,
-    time: '0:16–0:21',
     note: 'Caso real de GEN+: la partida de muro KK con 32% de diferencia entre expediente y modelo, y las 1.325 interferencias ARQ-EST del Hospital del Altiplano (ESSALUD Puno). Pregunta a la sala: ¿quién ha visto un metrado del expediente que no cuadra? Deja que 2-3 cuenten su historia — el dolor compartido abre la mente.',
   },
   {
     id: 'desperdicio', num: '5', title: 'Dónde nace el desperdicio', node: <Desperdicio />,
-    time: '0:21–0:26',
     note: 'Dos hallazgos históricos: Paulson 1976 (las decisiones tempranas definen el costo — ojo: la curva que todos llaman “de MacLeamy” es de Paulson, dato para expertos) y NIST 2004 (US$15.8B/año por interoperabilidad inadecuada, 2/3 lo paga el propietario en operación). Conclusión: el desperdicio es informacional y decisional.',
   },
   {
     id: 'vs-tradicional', num: '6', title: 'Tradicional vs VDC', node: <Tradicional />,
-    time: '0:26–0:30',
     note: 'Contraste directo. Recorre 2-3 filas de cada lado, no todas. Enfatiza el cierre: la diferencia no es el software — una empresa puede tener Revit y Navisworks y seguir gestionando “a la tradicional”. VDC es dónde se decide y cómo se mide.',
   },
   {
     id: 'flash-retrabajo', num: '⚡', title: 'Flash · La causa del retrabajo', node: <FlashSlide item={FLASH.retrabajo} />,
-    time: '0:30–0:33',
     note: 'Primer quiz con alternativas. Pide manos alzadas por opción antes de revelar. La respuesta (b) suele sorprender a los que votaron por mano de obra. Ancla el 48% (26% comunicación + 22% datos deficientes) — es EL dato que justifica invertir en gestión de información.',
   },
 ]

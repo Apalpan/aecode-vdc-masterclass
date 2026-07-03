@@ -18,7 +18,7 @@ function Normativa() {
         { y: 'ago 2026', t: 'Obligatorio GN + GORE', d: 'Tipologías seleccionadas del Gobierno Nacional y regionales. Es EL PRÓXIMO MES.', hot: true },
         { y: 'jul 2030', t: 'Todo el sector público', d: 'Gobiernos locales incluidos: inversión pública gestionada digitalmente.' },
       ]} />
-      <SourceNote>El Peruano / MEF (D.S. 289-2019-EF, D.S. 108-2021-EF, R.D. 0003-2023-EF/63.01) · INACAL (NTP-ISO 19650) · hitos 2026/2030 según hoja de ruta MEF (verificar cifras de entidades en mef.gob.pe antes de citar).</SourceNote>
+      <SourceNote>El Peruano / MEF (D.S. 289-2019-EF, D.S. 108-2021-EF, R.D. 0003-2023-EF/63.01) · INACAL (NTP-ISO 19650). Nota de rigor: el PNCP fijó el hito GN/GORE en dic-2025; la aplicación obligatoria comunicada por el MEF rige desde ago-2026 — citar la fuente específica al usar la fecha, y verificar cifras de entidades en mef.gob.pe.</SourceNote>
     </>
   )
 }
@@ -83,7 +83,7 @@ function CasosGen() {
           ['Túnel Ollachea (INTERSUR)', 'Vial · subterráneo', 'Modelado + compatibilización + metrados + 4D en obra', 'CDE Trimble Connect · ICE semanal · tablero Miro · dashboards'],
           ['Puente Santa Rosa', 'Vial · licitación', 'BEP preliminar + Plan de Calidad para la oferta técnica', 'ISO 19650 + Guía BIM Perú + estándares Provías'],
           ['Puente Sisa', 'Arco metálico', 'Modelado LOD 350 todas las especialidades + metrados', 'Automatización Dynamo/Python · clash en Navisworks · pago por hitos'],
-          ['Hospital GORE Cusco', 'Salud · implementación', 'BIM 4D + sectorización automatizada + Power BI + capacitación', 'Flujo Revit–Dynamo–Excel · trenes de trabajo · curva S viva'],
+          ['Hospital Belempampa (GORE Cusco)', 'Salud · implementación', 'BIM 4D + sectorización automatizada + Power BI + capacitación', 'Flujo Revit–Dynamo–Excel · trenes de trabajo · curva S viva'],
         ]}
       />
       <p className="nx-quote up" style={st(3)}>Fíjense en el patrón: <b>el VDC empieza antes de ganar la obra</b> (el BEP de la oferta), vive durante el diseño (clash y metrados), y gobierna la ejecución (4D, PPC, dashboards).</p>
@@ -95,7 +95,7 @@ function Arranque() {
   return (
     <>
       <Head eyebrow="Implementar de verdad" title="Cómo arranca una implementación VDC real"
-        lead="El método de arranque que usamos en GEN+ — tres pasos y un cuestionario de nueve preguntas." />
+        lead="El método de arranque que usamos en GEN+ — tres pasos y un cuestionario de 9 preguntas de diagnóstico (aquí, las 6 esenciales)." />
       <Flow steps={[
         ['Diagnóstico', 'Reunión inicial: alcance, objetivos del cliente, estado del proyecto y procesos-problema que duelen.'],
         ['Diseño del sistema', 'Objetivos de producción + métricas + factores controlables en los 3 pilares: ICE, BIM y PPM.'],
@@ -132,42 +132,34 @@ export const m5: Entry[] = [
     node: <SectionSlide eyebrow="Módulo 05" title={<>VDC en el Perú:<br />del piloto al mandato</>}
       lead="Normativa que ya tiene fecha, un ecosistema que lidera la región y casos de infraestructura funcionando hoy."
       chips={['Plan BIM Perú', 'ISO 19650 · NTP', 'Ulima × Stanford', 'Casos GEN+']} />,
-    time: '2:47–2:48',
     note: 'Transición: del caso al contexto país. Gancho: “lo que acaban de aprender deja de ser optativo en agosto de 2026 — les muestro por qué”.',
   },
   {
     id: 'normativa', num: '31', title: 'La línea de tiempo normativa', node: <Normativa />,
-    time: '2:48–2:53',
     note: 'Recorre la línea: D.S. 289-2019 → D.S. 108-2021 + NTP-ISO 19650 → Guía Nacional BIM 2023 → Ley 32069 → AGOSTO 2026 (obligatorio para Gobierno Nacional y regionales en tipologías seleccionadas — destácalo, es el próximo mes) → julio 2030 (todo el sector público). Advertencia de rigor: las cifras de “entidades con plan BIM” varían entre fuentes (50/90/150) — verificar en el portal MEF antes de citar una.',
   },
   {
     id: 'caja', num: '32', title: 'La caja de herramientas oficial', node: <CajaHerramientas />,
-    time: '2:53–2:57',
     note: 'El ecosistema documental ISO 19650 en flujo: OIR → PIR/AIR → EIR (Formato 04) → BEP (Formato 05) → TIDP/MIDP → PIM/AIM, todo en el CDE. Los 27 usos BIM oficiales (la ANIN aplica 13) y la regla práctica de priorizar 6-10 usos con LOIN. Cierra con el dato de gestión del cambio: el riesgo #1 documentado es la resistencia de las personas — por eso ICE.',
   },
   {
     id: 'ecosistema', num: '33', title: 'Quién es quién', node: <Ecosistema />,
-    time: '2:57–3:01',
     note: 'Precisión que da autoridad: la alianza Stanford CIFE certificada la tiene la ULIMA (no la PUCP — mito frecuente); el caso insignia validado externamente es Cosapi-Videna, presentado por el propio Martin Fischer. Y la brecha política-industria documentada en 2026: muchas entidades con plan aprobado, poca capacidad real — esa brecha es el mercado laboral de los alumnos.',
   },
   {
     id: 'casos-gen', num: '34', title: 'Cuatro obras reales GEN+', node: <CasosGen />,
-    time: '3:01–3:05',
     note: 'Los cuatro casos en tabla: Ollachea (túnel con ICE semanal y Miro), Santa Rosa (BEP para licitación — el VDC empieza antes de ganar), Sisa (LOD 350 con automatización Dynamo y pago por hitos de modelo) y GORE Cusco (sectorización automatizada Revit-Dynamo-Excel + 4D + Power BI). Patrón: VDC antes, durante y después del contrato.',
   },
   {
     id: 'arranque', num: '35', title: 'Cómo arranca una implementación', node: <Arranque />,
-    time: '3:05–3:08',
     note: 'El método de arranque real: diagnóstico con 9 preguntas (muestra las 6 del slide), diseño del sistema de métricas en los 3 pilares, y ciclo semanal de indicadores con ajuste. Frase: implementar VDC es instalar un ciclo, no entregar un documento.',
   },
   {
     id: 'plan-anatomia', num: '36', title: 'Anatomía de tu Plan VDC', node: <PlanAnatomia />,
-    time: '3:08–3:12',
     note: 'El entregable del diplomado: plantilla de 10 secciones, dosis mínima 2 CO + 2 PO + (3 ProdO + 3 FC) × 3 pilares, formato universal de métrica, banco de metas de referencia para calibrar y rúbrica de 7 criterios. Anuncia que la plantilla y dos ejemplos resueltos (hospital y vivienda) se comparten al final.',
   },
   {
     id: 'flash-peru', num: '⚡', title: 'Flash · ¿Desde cuándo es obligatorio?', node: <FlashSlide item={FLASH.peru2026} />,
-    time: '3:12–3:14',
     note: 'Quiz normativo: agosto 2026 para Gobierno Nacional y regionales (no 2023, no 2030 — el 2030 es gobiernos locales). Este dato convierte el diplomado en urgencia profesional.',
   },
 ]

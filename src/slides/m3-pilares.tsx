@@ -60,7 +60,7 @@ function IceMetricas() {
         { v: '≥90%', t: 'de asistencia de los roles clave requeridos', src: 'Formato Agenda ICE · GEN+', ac: 'g' },
         { v: '100%', t: 'de cumplimiento del pre-read: insumos completos 24 h antes', src: 'Formato Agenda ICE · GEN+', ac: 'w' },
       ]} />
-      <p className="nx-quote up" style={st(5)}>Si una métrica de la propia ICE falla dos sesiones seguidas, el <b>Facilitador VDC</b> ajusta el formato — el ritual también se mejora con datos.</p>
+      <p className="nx-quote up" style={st(5)}>Si una métrica de la propia ICE falla dos sesiones seguidas, el <b>Facilitador ICE</b> ajusta el formato — el ritual también se mejora con datos.</p>
     </>
   )
 }
@@ -232,67 +232,54 @@ export const m3: Entry[] = [
     node: <SectionSlide eyebrow="Módulo 03" title={<>ICE · BIM · PPM:<br />la maquinaria</>}
       lead="Cómo se opera VDC en el día a día: la sesión que decide, el modelo que coordina y la producción que se mide."
       chips={['Sesión ICE 90’', 'Clash management', 'CDE · ISO 19650', 'Last Planner', '15 métricas']} />,
-    time: '1:14–1:15',
     note: 'Transición: del framework a la maquinaria. Este es el módulo más operativo — pide que anoten formatos y números meta, porque todos salen de documentos reales de proyecto.',
   },
   {
     id: 'ice-anatomia', num: '14', title: 'La sesión ICE por dentro', node: <IceAnatomia />,
-    time: '1:15–1:20',
     note: 'Recorre la barra de 90 minutos bloque por bloque: 5-10-30-25-15-5. Los dos bloques gordos (issues 30’ y alternativas 25’) SIEMPRE ocurren sobre el modelo federado, nunca sobre un PPT. Anécdota útil: la diferencia entre “te presento el avance” y “decidamos este pase de ducto ahora, con el costo de cada alternativa en pantalla”.',
   },
   {
     id: 'ice-reglas', num: '15', title: 'Pre-read, roles y acta', node: <IceReglas />,
-    time: '1:20–1:25',
     note: 'Los tres seguros de la ICE: pre-read 24h antes (sin insumos no hay sesión), roles con responsabilidad explícita (facilitador, BIM coordinator, especialistas con PODER DE DECISIÓN, VDC manager, scribe) y la matriz de acuerdos con evidencia enlazada al CDE. Lee la cadena de propósito real: sesión → objetivo VDC (7→2 días) → resultado medible.',
   },
   {
     id: 'ice-metricas', num: '16', title: 'La ICE también se mide', node: <IceMetricas />,
-    time: '1:25–1:28',
     note: 'Cuatro KPIs de la propia sesión: ≥80% temas resueltos, ≤2 días de latencia, ≥90% asistencia, 100% pre-read. Idea fuerza: el ritual también rinde cuentas — si la ICE no cierra temas, se rediseña la ICE, no se culpa a la gente.',
   },
   {
     id: 'bim-federacion', num: '17', title: 'Federar, detectar, tolerar', node: <BimFederacion />,
-    time: '1:28–1:33',
     note: 'El flujo técnico NWC→NWF→NWD con los 4 tipos de prueba del Clash Detective. Concepto clave que separa juniors de seniors: la TOLERANCIA como filtro de ruido (15–40 mm según prioridad) y la diferencia entre clash duro y blando (espacios de uso y mantenimiento). Sin esto, el reporte de clashes es un tsunami inmanejable.',
   },
   {
     id: 'clash-caso', num: '18', title: 'Caso: Hospital del Altiplano', node: <ClashCiclo />,
-    time: '1:33–1:37',
     note: 'Números reales de un hospital de ESSALUD en Puno: 1.325 clashes ARQ-EST en la primera corrida. Mensaje: detectar es lo fácil — gestionar es priorizar (matriz de 22 pruebas, 5 prioridades) y cerrar el ciclo de vida de cada clash con latencia ≤3 días. La meta no es cero detectados: es cero CRÍTICOS abiertos antes de liberar a obra.',
   },
   {
     id: 'cde', num: '19', title: 'El CDE decide, no el correo', node: <Cde />,
-    time: '1:37–1:42',
     note: 'ISO 19650 aterrizada: estados WIP → Compartido → Publicado → Archivo (NTP peruana desde 2021). El caso AMSAC muestra la separación revisar/aprobar y la tipificación forma (nubes) vs fondo (incidencias). Regla de oro para dictar: “si no está en el CDE, no existe; si no está publicado, no se construye”.',
   },
   {
     id: 'ppm-lps', num: '20', title: 'Last Planner y PPC', node: <Ppm />,
-    time: '1:42–1:47',
     note: 'Conexión directa con el módulo Lean del diplomado: plan maestro → lookahead 3-6 semanas (liberar restricciones ≥1 semana antes) → plan semanal solo con trabajo libre → PPC + causas de no cumplimiento. Metas de referencia: PPC ≥90%, WIP ≤1.0. Frase: la confiabilidad protege el plazo, no la velocidad.',
   },
   {
     id: 'metrica-formato', num: '21', title: 'Toda métrica se escribe igual', node: <MetricaFormato />,
-    time: '1:47–1:50',
     note: 'La plantilla universal: Descripción | Fórmula | Meta | Frecuencia — con un ejemplo por pilar. Y la quinta columna implícita: ¿qué decisión habilita? Ejercicio relámpago: pide a alguien que convierta “queremos menos retrabajos” en una métrica bien escrita.',
   },
   {
     id: 'quince-metricas', num: '22', title: 'Las 15 métricas del Coordinador BIM', node: <Quince />,
-    time: '1:50–1:54',
     note: 'El arsenal completo en tres columnas: entrega/calidad, coordinación y aprovechamiento del modelo. No las leas todas — señala 3-4 y explica su “decisión habilitada”: clashes críticos ↑ → escalar a ICE; publicaciones CDE <100% → riesgo de construir con información obsoleta; metrados desde BIM ≥80% → el presupuesto vive en el modelo.',
   },
   {
     id: 'cinco-nucleo', num: '23', title: 'Empieza con 5, no con 15', node: <CincoNucleo />,
-    time: '1:54–1:57',
     note: 'Consejo de implementación con madurez: arrancar con las 5 métricas núcleo y escalar a 5D/retrabajo/automatización solo cuando el equipo ya mide con disciplina. El dashboard mínimo viable es 3×3. Advierte del anti-patrón: el “dashboard fantasma” con 20 métricas que nadie actualiza desde marzo.',
   },
   {
     id: 'flash-escalar', num: '⚡', title: 'Flash · Criterio de coordinador', node: <FlashSlide item={FLASH.escalar} />,
-    time: '1:57–1:59',
     note: 'Quiz de criterio profesional: clashes críticos subiendo dos semanas → escalar a ICE (no más horas, no maquillar la meta). Este flash consolida la idea central del módulo: métrica → decisión.',
   },
   {
     id: 'frase-decidir', num: '⚡', title: 'Síntesis · Decidir mejor', node: <FlashSlide item={FLASH.decidir} />,
-    time: '1:59–2:00',
     note: 'Cierre del módulo con la frase síntesis: VDC no es modelar mejor, es decidir mejor — y probarlo con métricas. ANUNCIA LA PAUSA DE 10 MINUTOS aquí. Al volver: el caso Megantoni completo y la auditoría en vivo.',
   },
 ]

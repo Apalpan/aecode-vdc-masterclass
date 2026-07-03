@@ -86,32 +86,26 @@ export const m6: Entry[] = [
     node: <SectionSlide eyebrow="Módulo 06" title={<>Hacia dónde va VDC:<br />la capa de IA</>}
       lead="Evidencia por capas, con nivel de confianza explícito — porque en 2026 el criterio vale más que el hype."
       chips={['Clash + ML', 'Reality capture', 'Scheduling generativo', 'Con fuentes']} />,
-    time: '2:49–2:50',
     note: 'Último módulo de contenido. Encuadre: no vamos a vender humo — separamos lo peer-reviewed, lo que el capital está apostando y lo que es visión de analistas. Ese criterio de clasificación es en sí mismo una lección del diplomado.',
   },
   {
     id: 'tres-capas', num: '37', title: 'Tres capas, tres velocidades', node: <TresCapas />,
-    time: '2:50–2:53',
     note: 'Las tres capas: (1) coordinación — el ML ya filtra clashes irrelevantes con >80% de precisión (papers ASCE/Automation in Construction); (2) captura de realidad — donde votó el capital: 77% del contech 2025 fue a IA, OpenSpace valuada en $902M y Buildots en $300M; (3) producción — scheduling generativo real (ALICE), pero el Last Planner sigue siendo humano. Nota el patrón: la IA entra primero donde hay datos estructurados.',
   },
   {
     id: 'sin-ia', num: '38', title: 'VDC gana sin IA', node: <SinIa />,
-    time: '2:53–2:55',
     note: 'El caso IGLC 2025 del hospital: −22% grúa, −24% casco, −25.000 HH, cero accidentes — VDC clásico, sin IA. Mensaje estratégico: primero el sistema, después la amplificación. La IA multiplica al que ya mide.',
   },
   {
     id: 'brecha', num: '39', title: 'Disponible ≠ adoptado', node: <Brecha />,
-    time: '2:55–2:57',
     note: 'La dosis de realismo: 88% usa IA en algo, solo un tercio escaló, y en construcción la adopción activa ronda el 10%. Los horizontes futuristas se citan SIEMPRE etiquetados como visión de analista. Esto también modela el rigor que les pedimos en sus trabajos.',
   },
   {
     id: 'doble', num: '40', title: 'El perfil escaso', node: <DobleCompetencia />,
-    time: '2:57–2:58',
     note: 'Aterrizaje profesional: la escalera de la doble competencia — dominar el sistema VDC, automatizar con Dynamo/Python, integrar IA con criterio, y la frontera abierta (IA en el compromiso del Last Planner — nadie lo publicó aún; puede ser su tesis). Conecta con los otros módulos del diplomado.',
   },
   {
     id: 'flash-cierre', num: '⚡', title: 'Síntesis · La IA alimenta al VDC', node: <FlashSlide item={FLASH.cierre} />,
-    time: '2:58–2:59',
     note: 'Frase síntesis final del módulo: la IA no reemplaza al VDC — lo alimenta. Sin objetivos, modelos y métricas no hay nada que optimizar. Puente al cierre de la clase.',
   },
 ]

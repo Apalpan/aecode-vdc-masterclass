@@ -118,27 +118,22 @@ export const m7: Entry[] = [
     node: <SectionSlide eyebrow="Cierre" title={<>Aterrizar:<br />tu Plan VDC</>}
       lead="Lo aprendido se consolida haciendo: el entregable, el repaso y las fuentes para seguir."
       chips={['Entregable', 'Flip-cards', 'Bibliografía']} />,
-    time: '2:59–3:00',
     note: 'Recta final. Recupera las hipótesis del debate inicial (slide 4): ¿cuáles sobrevivieron? Normalmente “falta de planificación” se transforma en “falta de sistema de decisiones y métricas” — el arco de la clase completo.',
   },
   {
     id: 'entregable', num: '41', title: 'Tu Plan VDC', node: <Entregable />,
-    time: '3:00–3:03',
     note: 'El entregable en 4 pasos: proyecto real → cascada (2 CO + 2 PO) → métricas (3+3 por pilar) → ritmo semanal. Se comparte la plantilla editable + los dos ejemplos resueltos (hospital USD 85M y vivienda 50 unidades) + la rúbrica de 7 criterios. Fecha de entrega según cronograma del diplomado.',
   },
   {
     id: 'repaso', num: '42', title: 'Repaso con flip-cards', node: <Repaso />,
-    time: '3:03–3:07',
     note: 'Repaso activo: pide a 6 voluntarios — cada uno responde UNA tarjeta antes de voltearla. Si el tiempo aprieta, hazlo con 3 y recuerda que el deck queda publicado con las 6 para repasar en casa.',
   },
   {
     id: 'fuentes', num: '43', title: 'Fuentes y confianza', node: <Fuentes />,
-    time: '3:07–3:09',
     note: 'La bibliografía comentada con niveles de confianza — y el meta-mensaje: así se citan fuentes en AECODE. Señala los dos “baja”: las cifras de entidades públicas sin fecha de corte clara y los multiplicadores virales sin fuente primaria ($1=$20) que NO deben citar jamás en un entregable.',
   },
   {
     id: 'gracias', num: '', title: 'Gracias', node: <Gracias />,
-    time: '3:09–3:10',
     note: 'Cierre emocional: VDC existe para que las promesas se cumplan — el hospital de Megantoni operando a tiempo vale más que cualquier modelo bonito. Preguntas finales, contacto y siguiente sesión del diplomado. Fin.',
   },
 ]

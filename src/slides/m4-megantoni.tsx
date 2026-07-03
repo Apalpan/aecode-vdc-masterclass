@@ -15,7 +15,7 @@ function Ficha() {
           ['nx-v', '📍', 'Camisea · Megantoni', 'La Convención, Cusco. Salud básica para el sistema amazónico; logística remota.'],
           ['nx-b', '🏛️', 'GORE Cusco / MINSA', 'Inversión pública, código 2614056 (Invierte.pe). La Entidad es dueña de los modelos.'],
           ['nx-g', '📐', 'Expediente: 150 días', '5 entregables (5/30/40/55/20 d.c.) bajo la Guía Nacional BIM y los EIR.'],
-          ['nx-v', '🏗️', 'Obra: 18 meses', 'Meta de puesta en servicio ≤ 15/05/2025, desviación ≤3% en plazo y costo.'],
+          ['nx-v', '🏗️', 'Obra: 18 meses', 'Metas declaradas del Plan VDC v04: servicio ≤ 15/05/2025, desviación ≤3% en plazo y costo.'],
         ] as Array<[string, string, string, string]>).map((c, i) => (
           <article className={`nx-card ${c[0]}`} key={c[2]} style={st(i + 1)}>
             <span className="nx-ic">{c[1]}</span>
@@ -160,47 +160,38 @@ export const m4: Entry[] = [
     node: <SectionSlide eyebrow="Módulo 04 · caso vivo" title={<>Hospital de Megantoni:<br />el plan VDC real</>}
       lead="Un hospital en la Amazonía del Cusco, dos documentos reales y una auditoría en vivo — con errores incluidos, porque así se aprende."
       chips={['GORE Cusco / MINSA', 'BEP v01 → Plan VDC v04', 'Auditoría en vivo']} />,
-    time: '2:10–2:11',
     note: 'Regreso de la pausa. Sube la energía: “ahora viene lo que ningún libro les puede dar — un plan VDC real, con sus aciertos y sus errores, y ustedes van a auditarlo”. Contexto humano: Camisea, salud amazónica, logística remota; este proyecto importa.',
   },
   {
     id: 'ficha', num: '24', title: 'Ficha del proyecto', node: <Ficha />,
-    time: '2:11–2:15',
-    note: 'La ficha: Camisea/Megantoni (La Convención, Cusco), GORE Cusco/MINSA, código de inversión 2614056, expediente en 150 días + obra en 18 meses. Presenta los DOS documentos: BEP v01 (marzo 2024) y Plan VDC v04 (octubre 2025) — la evolución entre ambos es la historia del módulo.',
+    note: 'La ficha: Camisea/Megantoni (La Convención, Cusco), GORE Cusco/MINSA, código de inversión 2614056, expediente en 150 días + obra en 18 meses. Presenta los DOS documentos: BEP v01 (marzo 2024) y Plan VDC v04 (octubre 2025) — la evolución entre ambos es la historia del módulo. Nota honesta si alguien hace la aritmética: la fecha ≤15/05/2025 y los 18 meses no cuadran perfectamente entre documentos — son metas declaradas del plan, y esa clase de inconsistencia real también es material didáctico.',
   },
   {
     id: 'cascada-real', num: '25', title: 'La cascada con datos reales', node: <CascadaReal />,
-    time: '2:15–2:21',
     note: 'El diagrama del módulo 2, ahora con datos reales. Recorre la bajada completa: operar el hospital ≤15/05/2025 → obra 18 meses ≤3% → decisión ≤3 días / clashes ≥90% / PPC ≥90% → 2 ICE al mes, federado semanal, LPS semanal. Remata con la lectura inversa: el ritual del lunes sostiene la fecha de operación del hospital.',
   },
   {
     id: 'panel-metricas', num: '26', title: 'Las 15 métricas del plan', node: <PanelMetricas />,
-    time: '2:21–2:26',
     note: 'El panel 3×5 completo del plan real. No lo leas entero: destaca una métrica por pilar y su porqué — decisiones ≤3 días (la latencia de Team X aterrizada), −15% retrabajo (conecta con el 48% de PlanGrid/FMI), 100% As-Built LOD 500 (conecta con el CO3 de O&M). Señala que cada una trae etiqueta costo/plazo/calidad.',
   },
   {
     id: 'ritmo', num: '27', title: 'El ritmo operativo', node: <Ritmo />,
-    time: '2:26–2:30',
     note: 'La tabla de factores controlables: ICE 2/mes con pre-read, federado semanal con QA/QC, Last Planner semanal con PPC en Power BI — cada ritual con herramienta y responsable. Y los 5 roles del sistema. Frase: “sin ritmo, las métricas son deseos; el calendario es el que gestiona”.',
   },
   {
     id: 'clash-plan', num: '28', title: 'Clash control de nivel pro', node: <ClashPlan />,
-    time: '2:30–2:34',
     note: 'El detalle fino que impresiona a los técnicos: 22 pruebas P01-P22 por pares de especialidad, 5 prioridades con tolerancias de 15 a 40 mm, duras vs blandas (±20/±25 mm). Más: nomenclatura Plan BIM Perú, parámetros de metrado ME_*, modelos ≤300 MB, ICE los jueves. Esto se escribe ANTES de detectar el primer clash.',
   },
   {
     id: 'auditoria', num: '29', title: 'Ejercicio: audita el BEP', node: <Auditoria />,
-    time: '2:34–2:42',
     note: 'LA dinámica estrella — 8 minutos. Divide la sala en parejas, 3 minutos para debatir cuáles son los 5 errores, luego destapa tarjeta por tarjeta con votación a mano alzada. Los errores son REALES del BEP v01: plantilla reciclada de otro proyecto (Puente Piedra/Prisma), campos en blanco, roles sin nombres, Google Drive como ECD, entidades inconsistentes. Cuenta que esto pasa en la vida real cuando el BEP se hace “para cumplir”.',
   },
   {
     id: 'moraleja', num: '30', title: 'BEP ≠ Plan VDC', node: <Moraleja />,
-    time: '2:42–2:45',
     note: 'La moraleja del ejercicio: el BEP define cómo se produce la información; el Plan VDC cómo se GESTIONA el proyecto con ella. Los 4 ingredientes que convierten un BEP en VDC: objetivos SMART, métricas vivas, factores controlables y ciclo de mejora. El mismo proyecto pasó de BEP-de-cumplimiento (2024) a plan gestionado (2025).',
   },
   {
     id: 'flash-lod500', num: '⚡', title: 'Flash · El −10% de O&M', node: <FlashSlide item={FLASH.lod500} />,
-    time: '2:45–2:47',
     note: 'Quiz de cierre del caso: ¿qué exige el plan para lograr −10% de O&M? El As-Built LOD 500. Es la pregunta más conceptual del día — muestra que la cascada funciona hacia adelante en el tiempo: un objetivo de OPERACIÓN definido hoy obliga una métrica BIM durante toda la obra.',
   },
 ]
